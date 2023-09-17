@@ -8,3 +8,7 @@ Cypress.Commands.add('inputData', (username, password) => {
    cy.get('#Email').should('be.visible').type(username)
    cy.get('#Password').should('be.visible').type(password , { force: true })
 })
+
+Cypress.Commands.add('verifyMessage', (locator, message) => {
+    cy.get(locator).should('be.visible').should('be.have', message)
+ })

@@ -1,6 +1,6 @@
 import loginObjects from "../../support/pageObjects/loginObjects"
 import landingPageObjects from "../../support/pageObjects/landingPageObjects"
-const messageValidation = require ("../../fixtures/messagesValidation.json")
+const messages = require ("../../fixtures/messages.json")
 describe('Verify login Page', () => {
   const LoginObject = new loginObjects
   const LandingPageObjects = new landingPageObjects  

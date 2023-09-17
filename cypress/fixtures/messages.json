@@ -1,0 +1,7 @@
+{
+    "invalidLoginMsg" : "Login was unsuccessful. Please correct the errors and try again.",
+    "firstNameReqiredMsg" : "First name is required.",
+    "lasNameRequiredMsg" : "Last name is required.",
+    "emailRequiredMsg" : "Email is required.",
+    "passwordRequiredMsg" : "Password is required."
+}
