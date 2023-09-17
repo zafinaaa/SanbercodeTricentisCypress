@@ -11,7 +11,9 @@ class registerpage{
     firstNameRequiredLabel = ':nth-child(2) > .form-fields > :nth-child(2) > .field-validation-error > span'
     lastNameRequiredLabel = ':nth-child(3) > .field-validation-error > span'
     emailRequiredLabel = ':nth-child(4) > .field-validation-error > span'
-    passwordrequiredLabel = ':nth-child(4) > .field-validation-error > span'
+    passwordrequiredLabel = ':nth-child(1) > .field-validation-error > span'
     confrimPasswordRequiredLabel = ':nth-child(3) > .form-fields > :nth-child(2) > .field-validation-error > span'
+    emailExistsLabel = '.validation-summary-errors > ul > li'
+    passwordDidNotMatchLabel = '.field-validation-error > span'
 }
 export default registerpage

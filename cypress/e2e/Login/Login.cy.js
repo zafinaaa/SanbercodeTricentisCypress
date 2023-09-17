@@ -26,13 +26,13 @@ describe('Verify login Page', () => {
     const datauser = users[1];
     cy.inputData(datauser.username, datauser.password)
     cy.get(LoginObject.BtnLogin).click()
-    cy.get(LoginObject.invalidLoginMsg).should('contain.text', messageValidation.invalidLoginMsg)
+    cy.get(LoginObject.invalidLoginMsg).should('contain.text', messages.invalidLoginMsg)
     })
   })
 
   it('TC 03 Login with empty email & password', () => {
     cy.get(LoginObject.BtnLogin).click()
-    cy.get(LoginObject.invalidLoginMsg).should('contain.text', messageValidation.invalidLoginMsg)
+    cy.get(LoginObject.invalidLoginMsg).should('contain.text', messages.invalidLoginMsg)
     })
   })
 

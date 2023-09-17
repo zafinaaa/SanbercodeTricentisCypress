@@ -3,5 +3,7 @@
     "firstNameReqiredMsg" : "First name is required.",
     "lasNameRequiredMsg" : "Last name is required.",
     "emailRequiredMsg" : "Email is required.",
-    "passwordRequiredMsg" : "Password is required."
+    "passwordRequiredMsg" : "Password is required.",
+    "emailExistsMsg" : "The specified email already exists",
+    "passwordDidNotMatch" : "The password and confirmation password do not match."
 }
