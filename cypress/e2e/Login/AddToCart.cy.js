@@ -6,14 +6,12 @@ describe('Verify Register Page', () => {
     const AddToCartObjects = new addToCartObjects
       beforeEach(() => {
         cy.visit('/')
-        
-      })
-      it.only('TC1 User able to Add item to cart', () => {
         cy.login()
+      })
+      it('TC1 User able to Add item to cart', () => {
         cy.fixture('users.json')
         .then((users) => {
         const datauser = users[0];
-        //cy.get(':nth-child(2) > .product-item > .picture > a > img').scrollIntoView() 
         cy.selectProducts(ProductObject.$25VirtualGiftCard)
         cy.get(ProductObject.currentItem).should('have.text', '$25 Virtual Gift Card', )
         cy.get(AddToCartObjects.recipientName).type(datauser.firstName)
@@ -28,13 +26,11 @@ describe('Verify Register Page', () => {
         })
     })
     it('TC2 User able to update qty item at cart', () => {
-        cy.login()
         cy.fixture('users.json')
         .then((users) => {
-        const datauser = users[0];
-        //cy.get(':nth-child(2) > .product-item > .picture > a > img').scrollIntoView() 
+        const datauser = users[0]; 
         cy.selectProducts(ProductObject.$25VirtualGiftCard)
-        cy.get(ProductObject.currentItem).should('have.text', '$25 Virtual Gift Card', )
+        cy.get(ProductObject.currentItem).should('have.text', '$25 Virtual Gift Card' )
         cy.get(AddToCartObjects.recipientName).type(datauser.firstName)
         cy.get(AddToCartObjects.recipientEmail).type(datauser.username)
         cy.get(AddToCartObjects.addToCartBtN).click()

@@ -5,5 +5,6 @@
     "emailRequiredMsg" : "Email is required.",
     "passwordRequiredMsg" : "Password is required.",
     "emailExistsMsg" : "The specified email already exists",
-    "passwordDidNotMatch" : "The password and confirmation password do not match."
+    "passwordDidNotMatch" : "The password and confirmation password do not match.",
+    "orderSuccessfulMsg" : "Your order has been successfully processed!"
 }
