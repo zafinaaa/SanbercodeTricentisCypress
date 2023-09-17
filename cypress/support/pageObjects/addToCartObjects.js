@@ -5,5 +5,7 @@ class addToCartObjects{
     bannerMsg = '.content'
     cartTxtBtn = '.content > a'
     cartQty = '.cart-qty'
+    qtyTxtInput = '.qty-input'
+    updateCartBtn = '.update-cart-button'
 }
 export default addToCartObjects
